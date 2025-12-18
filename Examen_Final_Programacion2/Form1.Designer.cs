@@ -39,9 +39,10 @@
             bt_consultar.Location = new Point(45, 94);
             bt_consultar.Name = "bt_consultar";
             bt_consultar.Size = new Size(179, 55);
-            bt_consultar.TabIndex = 0;
+            bt_consultar.TabIndex = 2;
             bt_consultar.Text = "Consultar";
             bt_consultar.UseVisualStyleBackColor = true;
+            bt_consultar.Click += bt_consultar_Click;
             // 
             // bt_Ingresar
             // 
@@ -52,6 +53,7 @@
             bt_Ingresar.TabIndex = 1;
             bt_Ingresar.Text = "Ingresar";
             bt_Ingresar.UseVisualStyleBackColor = true;
+            bt_Ingresar.Click += bt_Ingresar_Click;
             // 
             // bt_salir
             // 
@@ -59,9 +61,10 @@
             bt_salir.Location = new Point(45, 155);
             bt_salir.Name = "bt_salir";
             bt_salir.Size = new Size(179, 55);
-            bt_salir.TabIndex = 2;
+            bt_salir.TabIndex = 3;
             bt_salir.Text = "Salir";
             bt_salir.UseVisualStyleBackColor = true;
+            bt_salir.Click += bt_salir_Click;
             // 
             // Form1
             // 
@@ -72,7 +75,8 @@
             Controls.Add(bt_Ingresar);
             Controls.Add(bt_consultar);
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Menu Principal";
             ResumeLayout(false);
         }
 

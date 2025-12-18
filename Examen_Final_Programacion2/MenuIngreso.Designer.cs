@@ -40,9 +40,10 @@
             bt_IngresarCiudad.Location = new Point(24, 151);
             bt_IngresarCiudad.Name = "bt_IngresarCiudad";
             bt_IngresarCiudad.Size = new Size(179, 55);
-            bt_IngresarCiudad.TabIndex = 5;
+            bt_IngresarCiudad.TabIndex = 3;
             bt_IngresarCiudad.Text = "Ciudad";
             bt_IngresarCiudad.UseVisualStyleBackColor = true;
+            bt_IngresarCiudad.Click += bt_IngresarCiudad_Click;
             // 
             // bt_IngresarPais
             // 
@@ -50,9 +51,10 @@
             bt_IngresarPais.Location = new Point(24, 29);
             bt_IngresarPais.Name = "bt_IngresarPais";
             bt_IngresarPais.Size = new Size(179, 55);
-            bt_IngresarPais.TabIndex = 4;
-            bt_IngresarPais.Text = "Pais";
+            bt_IngresarPais.TabIndex = 1;
+            bt_IngresarPais.Text = "País";
             bt_IngresarPais.UseVisualStyleBackColor = true;
+            bt_IngresarPais.Click += bt_IngresarPais_Click;
             // 
             // bt_IngresarProvincia
             // 
@@ -60,9 +62,10 @@
             bt_IngresarProvincia.Location = new Point(24, 90);
             bt_IngresarProvincia.Name = "bt_IngresarProvincia";
             bt_IngresarProvincia.Size = new Size(179, 55);
-            bt_IngresarProvincia.TabIndex = 3;
+            bt_IngresarProvincia.TabIndex = 2;
             bt_IngresarProvincia.Text = "Provincia";
             bt_IngresarProvincia.UseVisualStyleBackColor = true;
+            bt_IngresarProvincia.Click += bt_IngresarProvincia_Click;
             // 
             // bt_regresar
             // 
@@ -70,9 +73,10 @@
             bt_regresar.Location = new Point(24, 212);
             bt_regresar.Name = "bt_regresar";
             bt_regresar.Size = new Size(179, 55);
-            bt_regresar.TabIndex = 6;
+            bt_regresar.TabIndex = 4;
             bt_regresar.Text = "Regresar";
             bt_regresar.UseVisualStyleBackColor = true;
+            bt_regresar.Click += bt_regresar_Click;
             // 
             // MenuIngreso
             // 
@@ -84,6 +88,7 @@
             Controls.Add(bt_IngresarPais);
             Controls.Add(bt_IngresarProvincia);
             Name = "MenuIngreso";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MenuIngreso";
             ResumeLayout(false);
         }
